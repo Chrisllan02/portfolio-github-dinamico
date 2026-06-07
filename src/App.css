@@ -107,11 +107,43 @@ h1 {
   max-width: 680px;
 }
 
+.about-fields {
+  display: grid;
+  gap: 12px;
+  margin-top: 28px;
+  max-width: 720px;
+}
+
+.about-fields div {
+  background: rgba(15, 23, 42, 0.58);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-radius: 22px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  padding: 16px 18px;
+}
+
+.about-fields span {
+  color: #67e8f9;
+  display: block;
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.about-fields strong {
+  color: #e5edf8;
+  display: block;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  margin-top: 36px;
+  margin-top: 30px;
 }
 
 .button {
@@ -504,6 +536,10 @@ footer a {
   .hero-copy p,
   .section-heading p,
   .workflow-section p {
+    max-width: min(330px, 100%);
+  }
+
+  .about-fields {
     max-width: min(330px, 100%);
   }
 

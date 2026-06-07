@@ -141,11 +141,21 @@ function App() {
 
       <section className="hero-section" id="top">
         <div className="hero-copy">
-          <h1>{primaryName}: portfólio vivo puxado direto do GitHub.</h1>
+          <h1>Portfólio</h1>
           <p>
-            Um MVP que transforma seus repositórios públicos em uma vitrine visual,
-            filtrável e pronta para evoluir com curadoria, métricas e páginas individuais.
+            Sou {primaryName}, desenvolvedor focado em transformar ideias em produtos
+            digitais úteis, bem acabados e conectados com dados reais.
           </p>
+          <div className="about-fields" aria-label="Tecnologias e frentes de atuacao">
+            <div>
+              <span>Tec</span>
+              <strong>TypeScript, React, Vite, CSS, APIs e integrações web.</strong>
+            </div>
+            <div>
+              <span>Frentes de atuação</span>
+              <strong>Web apps, dashboards, dados públicos, extensões Chrome, UX/UI e automação.</strong>
+            </div>
+          </div>
           <div className="hero-actions">
             <a className="button primary" href="#projetos">
               Ver projetos
@@ -171,7 +181,10 @@ function App() {
             <strong>{primaryName}</strong>
             <span>@{profile?.login ?? GITHUB_USERNAME}</span>
           </div>
-          <p>{profile?.bio ?? 'Projetos públicos organizados automaticamente pelo GitHub.'}</p>
+          <p>
+            {profile?.bio ??
+              'Desenvolvedor focado em produtos digitais, integrações web e experiências com dados reais.'}
+          </p>
           <dl>
             <div>
               <dt>Repos</dt>
