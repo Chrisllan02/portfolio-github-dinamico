@@ -132,7 +132,7 @@ function App() {
         </a>
         <nav aria-label="Navegacao principal">
           <a href="#projetos">Projetos</a>
-          <a href="#como-funciona">Como funciona</a>
+          <a href="#atuacao">Atuação</a>
           <a href={profile?.html_url ?? `https://github.com/${GITHUB_USERNAME}`} target="_blank">
             GitHub
           </a>
@@ -187,11 +187,11 @@ function App() {
           </p>
           <dl>
             <div>
-              <dt>Repos</dt>
+              <dt>Projetos</dt>
               <dd>{profile?.public_repos ?? projects.length}</dd>
             </div>
             <div>
-              <dt>Lives</dt>
+              <dt>Online</dt>
               <dd>{liveProjects}</dd>
             </div>
             <div>
@@ -205,7 +205,7 @@ function App() {
       <section className="section-block">
         <div className="section-heading">
           <h2>Projetos em destaque</h2>
-          <p>Ordenados por demo online, descrição, estrelas e atualização recente.</p>
+          <p>Uma seleção dos trabalhos que mostram produto, interface, dados e execução técnica.</p>
         </div>
 
         <div className="featured-grid">
@@ -220,7 +220,7 @@ function App() {
         <div className="section-heading with-action">
           <div>
             <h2>Todos os projetos</h2>
-            <p>Filtre por linguagem ou topic publicado no próprio GitHub.</p>
+            <p>Explore minha evolução por stack, tecnologia e tipo de solução entregue.</p>
           </div>
           <span>{filteredProjects.length} projetos</span>
         </div>
@@ -244,35 +244,35 @@ function App() {
         </div>
       </section>
 
-      <section className="workflow-section" id="como-funciona">
+      <section className="workflow-section" id="atuacao">
         <div>
-          <h2>GitHub vira CMS.</h2>
+          <h2>Como eu trabalho.</h2>
           <p>
-            O MVP usa os campos que você já mantém nos repositórios: descrição,
-            homepage, linguagem, topics, estrelas e data de push.
+            Gosto de criar produtos claros, rápidos e úteis, combinando experiência
+            visual, integração com dados reais e uma execução direta para produção.
           </p>
         </div>
         <div className="workflow-list">
           <article>
             <strong>1</strong>
-            <h3>Publicou no GitHub</h3>
-            <p>O repositório entra automaticamente na vitrine pública.</p>
+            <h3>Produto e contexto</h3>
+            <p>Entendo o problema, organizo a experiência e defino o caminho de entrega.</p>
           </article>
           <article>
             <strong>2</strong>
-            <h3>Adicionou homepage</h3>
-            <p>O card ganha CTA para abrir a demonstração online.</p>
+            <h3>Interface e execução</h3>
+            <p>Construo telas responsivas, bem acabadas e com hierarquia visual clara.</p>
           </article>
           <article>
             <strong>3</strong>
-            <h3>Usou topics</h3>
-            <p>O projeto passa a aparecer nos filtros de tecnologia.</p>
+            <h3>Dados e integrações</h3>
+            <p>Conecto APIs, automações e serviços para tirar ideias do protótipo.</p>
           </article>
         </div>
       </section>
 
       <footer>
-        <span>Portfolio dinamico de {primaryName}</span>
+        <span>Portfólio de {primaryName}</span>
         <a href={`https://github.com/${GITHUB_USERNAME}`} target="_blank">
           github.com/{GITHUB_USERNAME}
         </a>
@@ -293,7 +293,7 @@ function ProjectCard({ project, featured = false }: { project: PortfolioProject;
         <span>{formatDate(project.pushed_at)}</span>
       </div>
       <h3>{project.displayName}</h3>
-      <p>{project.description ?? 'Sem descrição no GitHub. Atualize o campo About para enriquecer o card.'}</p>
+      <p>{project.description ?? 'Projeto em evolução, com foco em aprendizado, execução e entrega.'}</p>
       <div className="tech-list">
         {project.techs.slice(0, 4).map((tech) => (
           <span key={tech}>{tech}</span>
@@ -332,8 +332,8 @@ function LoadingCards() {
 function ErrorState() {
   return (
     <div className="error-state">
-      <h3>Nao foi possivel carregar o GitHub agora.</h3>
-      <p>O layout continua pronto; tente atualizar a pagina ou configurar um token server-side na proxima etapa.</p>
+      <h3>Não foi possível carregar os projetos agora.</h3>
+      <p>Tente atualizar a página em alguns instantes.</p>
     </div>
   )
 }

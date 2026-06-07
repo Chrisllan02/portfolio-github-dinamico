@@ -1,29 +1,36 @@
-# Portfolio GitHub Dinamico
+# Chrisllan Franco | Portfólio
 
-MVP de portfolio que usa o GitHub como fonte de dados para montar uma vitrine de projetos publica e atualizavel.
+Portfólio pessoal de Chrisllan Franco, desenvolvido para apresentar projetos,
+tecnologias e frentes de atuação em desenvolvimento web.
 
-## O que ja faz
+## Sobre
 
-- Carrega perfil publico do GitHub.
-- Lista repositorios publicos nao arquivados e que nao sejam forks.
-- Ordena projetos por demo online, descricao, estrelas e atividade recente.
-- Mostra cards com linguagem, data de push, descricao, tags, estrelas, link do codigo e demo.
-- Permite filtrar por linguagem ou topics do GitHub.
-- Funciona em desktop e mobile.
+Sou desenvolvedor focado em transformar ideias em produtos digitais úteis,
+bem acabados e conectados com dados reais.
 
-## Como configurar
+## Tecnologias
 
-Por padrao o app usa o usuario `Chrisllan02`.
+- TypeScript
+- React
+- Vite
+- CSS
+- APIs e integrações web
 
-Para trocar:
+## Frentes de atuação
 
-```bash
-VITE_GITHUB_USERNAME=seu-usuario npm run dev
-```
+- Web apps
+- Dashboards
+- Dados públicos
+- Extensões Chrome
+- UX/UI
+- Automação
 
-Em deploys na Vercel, configure a env `VITE_GITHUB_USERNAME` se quiser usar outro usuario.
+## Projetos
 
-## Como rodar localmente
+A seção de projetos reúne trabalhos publicados, demos online e repositórios
+que representam minha evolução técnica e visual.
+
+## Desenvolvimento
 
 ```bash
 npm install
@@ -35,11 +42,3 @@ npm run dev
 ```bash
 npm run build
 ```
-
-## Proximos passos
-
-- Adicionar paginas individuais por projeto.
-- Criar curadoria via topics como `portfolio`, `featured`, `ai`, `frontend`.
-- Buscar README de cada repositorio para gerar resumo.
-- Adicionar cache server-side com token do GitHub para evitar limite publico.
-- Conectar analytics e formulario de contato.
